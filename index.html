@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="./style.css">
+
+    <title>Quiz</title>
+</head>
+<body>
+    <div class="container">
+        <div id="start-page">
+            <h1 id="starth1">Pokemon Quiz</h1>
+            <div class="buts">
+                <button id="start">lets play</button>
+                <button id="hall">hall of fame</button>
+            </div>
+        </div>
+        <div class="quizbox">
+            <div id="boxwrap">
+                <h2 class="timer"></h2>
+                <h3 class="countdown"></h3>
+                <input type="text" id="hallinput"   placeholder="enter your name">
+                <button id="inputBtn">Save score</button>            
+                <div class="quizquestions">
+                    <h2 id="presemtscore-main" >Present score: <span id="presentScore">0</span></h2>
+                    <h4 class="question-num"></h4>
+                    <h1 id="question-text">Question</h1>
+                    <div id="answer-buttons">
+                    </div>
+                    <button id="next" >Next</button>
+                </div>
+            </div>
+            <div id="high-scores">
+                <h1>Leader board</h1>
+                <p id="high1" class="high"></p>
+                <p id="high2" class="high"></p>
+                <p id="high3" class="high"></p>
+                <p id="high4" class="high"></p>
+                <p id="high5" class="high"></p>
+                <button id="back">Main Menu</button>
+            </div>
+    
+        </div>
+
+    <script src="./app.js"></script>
+</body>
+</html>
