@@ -1,2 +1,2 @@
 https://generalknowlegequizuyo.netlify.app/
-A moderateky hard general knowledge quiz.
+A moderately hard general knowledge quiz.
