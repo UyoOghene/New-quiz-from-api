@@ -35,6 +35,7 @@ backButton.addEventListener('click',backbtn);
 hallbtn.addEventListener('click', hallFame);
 next.addEventListener('click', nextQ);
 inputBtn.addEventListener('click', saveHighScore);
+musictxt.addEventListener('click',changeSrc);
 
 async function startQuiz() {
     score = 0;
@@ -223,3 +224,19 @@ function backbtn(){
     }
 }
 
+function changeSrc() {
+    console.log(musicSrc);
+
+    let changeattribute = musicSrc.getAttribute('src');
+    console.log(changeattribute);
+    if (changeattribute.includes('./music/French Montana - Ain\'t Worried About Nothin (Explicit).mp3')) {
+        console.log('ayra');
+        musicSrc.setAttribute("src", './music/Rema-Calm-Down.mp3');
+        console.log(musicSrc);
+        musicSrc.play();
+    } else {
+        console.log('french');
+        musicSrc.setAttribute("src", "./music/French Montana - Ain\'t Worried About Nothin (Explicit).mp3");
+        musicSrc.play();
+    }
+}
